@@ -1,0 +1,36 @@
+[user]
+	name = yuxiaohua
+	email = hzyuxiaohua@gmail.com
+[push]
+	default = simple
+[core]
+	excludesfile = /Users/H-YXH/.gitignore_global
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path =
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[alias]
+	lola = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
+	br = branch
+	rb = rebase
+	arb= rebase --autostash
+	co = checkout
+	st = status
+	ci = commit
+	cim= commit -m
+	cia= commit -am
+	sh = stash
+	df = diff
+	dfc= diff --cached
+	ft = fetch
+	plr= pull --rebase
+	po = push origin
+	su = submodule update --init
+[color]
+	ui = true
+[merge]
+	conflictstyle = diff3
+[branch]
+    autosetuprebase = always
