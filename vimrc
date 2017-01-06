@@ -2,11 +2,13 @@
 " Version: 1
 " Author: Seth Mason
 " Created: 19 Nov 2003 10:20:19
-" Last-modified: 14 Nov 2004 06:21:44
+" Last-modified: 06 Jan 2017 10:11:37 PM
 " All my Vim commands for the taking
 " Works on cygwin but not very well on unix machines...still trying to figure
 " it out
 
+" display line number
+set nu
 
 " Use Vim settings, rather then Vi settings (much better!).
 set nocompatible
@@ -187,7 +189,7 @@ map <c-a> ggVG
 imap <c-z> <c-o>u
 
 " Load my color scheme 
-colorscheme slack
+" colorscheme slack
 
 " ************************************************************************
 " B E G I N  A U T O C O M M A N D S
